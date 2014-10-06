@@ -1,4 +1,3 @@
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\obj\Debug\TimesheetXF.Android.csprojResolveAssemblyReference.cache
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\TimesheetXF.Android.dll
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\TimesheetXF.Android.pdb
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\TimesheetXF.Android.dll.mdb
@@ -10,12 +9,13 @@ C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\Xamarin.Forms.Xaml.dll
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\TimesheetXF.pdb
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\TimesheetXF.dll.mdb
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\Xamarin.Forms.Core.xml
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\obj\Debug\TimesheetXF.Android.csprojResolveAssemblyReference.cache
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\obj\Debug\TimesheetXF.Android.dll
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\obj\Debug\TimesheetXF.Android.pdb
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\obj\Debug\android\bin\TimesheetXF.Android.apk
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\obj\Debug\res\drawable\icon.png
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\obj\Debug\R.cs.flag
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\obj\Debug\uploadflags.txt
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\TimesheetXF.dll.mdb

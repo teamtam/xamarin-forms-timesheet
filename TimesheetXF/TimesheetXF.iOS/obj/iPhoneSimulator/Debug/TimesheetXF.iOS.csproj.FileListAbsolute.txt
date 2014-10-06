@@ -1,0 +1,14 @@
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\bin\iPhoneSimulator\Debug\TimesheetXFiOS.exe
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\bin\iPhoneSimulator\Debug\TimesheetXFiOS.pdb
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\bin\iPhoneSimulator\Debug\TimesheetXF.dll
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\bin\iPhoneSimulator\Debug\TimesheetXF.pdb
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\bin\iPhoneSimulator\Debug\TimesheetXF.dll.mdb
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.xml
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.xml
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\obj\iPhoneSimulator\Debug\
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\obj\iPhoneSimulator\Debug\TimesheetXF.iOS.csprojResolveAssemblyReference.cache
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\obj\iPhoneSimulator\Debug\TimesheetXFiOS.exe
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.iOS\obj\iPhoneSimulator\Debug\TimesheetXFiOS.pdb

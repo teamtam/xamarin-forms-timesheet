@@ -1,25 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Xamarin.Forms;
+using TimesheetXF.Pages;
 
 namespace TimesheetXF
 {
     public class App
     {
+        private static readonly Page MainPage;
+
+        static App()
+        {
+            MainPage = new NavigationPage(new OutstandingTimesheetListPage());
+        }
+
         public static Page GetMainPage()
         {
-            return new ContentPage
-            {
-                Content = new Label
-                {
-                    Text = "Hello, Forms !",
-                    VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand,
-                },
-            };
+            return MainPage;
         }
     }
 }

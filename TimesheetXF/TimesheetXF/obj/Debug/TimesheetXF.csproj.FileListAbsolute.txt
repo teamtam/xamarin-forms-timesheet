@@ -1,4 +1,3 @@
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\obj\Debug\TimesheetXF.csprojResolveAssemblyReference.cache
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Debug\TimesheetXF.dll
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Debug\TimesheetXF.pdb
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Debug\Xamarin.Forms.Core.dll
@@ -7,3 +6,4 @@ C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Deb
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\obj\Debug\TimesheetXF.dll
 C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\obj\Debug\TimesheetXF.pdb
+C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\obj\Debug\TimesheetXF.csprojResolveAssemblyReference.cache
