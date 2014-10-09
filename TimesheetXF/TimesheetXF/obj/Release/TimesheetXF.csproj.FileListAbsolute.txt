@@ -1,8 +1,0 @@
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Release\TimesheetXF.dll
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Release\TimesheetXF.pdb
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Release\Xamarin.Forms.Core.dll
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Release\Xamarin.Forms.Xaml.dll
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Release\Xamarin.Forms.Core.xml
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Release\Xamarin.Forms.Xaml.xml
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\obj\Release\TimesheetXF.dll
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\obj\Release\TimesheetXF.pdb

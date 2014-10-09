@@ -1,2 +1,0 @@
-C:\BenSource\GitHub\xamarin-forms-timesheet\TimesheetXF\TimesheetXF.WinPhone\TimesheetXF.WinPhone.csproj;neutral
-C:\BenSource\GitHub\xamarin-forms-timesheet\TimesheetXF\TimesheetXF\TimesheetXF.csproj;neutral
