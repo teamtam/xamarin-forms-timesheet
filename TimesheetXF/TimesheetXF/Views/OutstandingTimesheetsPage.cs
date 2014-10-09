@@ -23,6 +23,7 @@ namespace TimesheetXF.Views
             Padding = new Thickness(0, 10, 0, 0);
             Title = "Timesheets";
             Content = layout;
+            BackgroundColor = Color.Red;
         }
 
         private ListView CreateOutstandingTimesheets()
@@ -33,7 +34,8 @@ namespace TimesheetXF.Views
                 ItemTemplate = new DataTemplate(typeof(ListCell)),
                 HorizontalOptions = LayoutOptions.StartAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand,
-                RowHeight = 100 // NOTE: would be nice if this was more dynamic e.g. stack layout fill/padding ...
+                RowHeight = 75, // NOTE: would be nice if this was more dynamic e.g. stack layout fill/padding ...
+                BackgroundColor = Color.White
             };
             CreateEventHandlers(outstandingTimesheets);
             return outstandingTimesheets;

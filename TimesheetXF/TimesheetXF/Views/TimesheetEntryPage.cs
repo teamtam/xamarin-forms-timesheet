@@ -76,12 +76,14 @@ namespace TimesheetXF.Views
                     submitButton
                 }
             };
+            content.BackgroundColor = Color.White;
             var layout = CreateLoadingIndicatorRelativeLayout(content);
             //var layout = CreateLoadingIndicatorAbsoluteLayout(content);
 
             Padding = new Thickness(15, 10);
             Title = "Submit";
             Content = layout;
+            BackgroundColor = Color.Red;
         }
 
         private Label CreateDateLabel()
