@@ -63,7 +63,7 @@ namespace TimesheetXF.Views
 
             var submitButton = CreateSubmitButton(timesheet, hoursInput, commentInput, sickLeaveInput);
 
-            var layout = new StackLayout
+            var content = new StackLayout
             {
                 Children =
                 {
@@ -73,12 +73,11 @@ namespace TimesheetXF.Views
                     hoursLayout,
                     commentLayout,
                     sickLeaveLayout,
-                    submitButton,
-                    CreateLoadingIndicator()
+                    submitButton
                 }
             };
             //var layout = CreateLoadingIndicatorRelativeLayout(content);
-            //var layout = CreateLoadingIndicatorAbsoluteLayout(content);
+            var layout = CreateLoadingIndicatorAbsoluteLayout(content);
 
             Padding = new Thickness(15, 10);
             Title = "Submit";

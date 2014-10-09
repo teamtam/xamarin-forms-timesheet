@@ -17,12 +17,8 @@ namespace TimesheetXF.Views
         {
             BindingContext = new OutstandingTimesheetsViewModel();
 
-            var layout = new StackLayout
-            {
-                Children = { CreateLoadingIndicator(), CreateOutstandingTimesheets() }
-            };
             //var layout = CreateLoadingIndicatorRelativeLayout(CreateOutstandingTimesheets());
-            //var layout = CreateLoadingIndicatorAbsoluteLayout(CreateOutstandingTimesheets());
+            var layout = CreateLoadingIndicatorAbsoluteLayout(CreateOutstandingTimesheets());
 
             Padding = new Thickness(0, 10, 0, 0);
             Title = "Timesheets";
@@ -37,7 +33,7 @@ namespace TimesheetXF.Views
                 ItemTemplate = new DataTemplate(typeof(ListCell)),
                 HorizontalOptions = LayoutOptions.StartAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand,
-                RowHeight = 75, // NOTE: would be nice if this was more dynamic e.g. stack layout fill/padding ...
+                RowHeight = 100, // NOTE: would be nice if this was more dynamic e.g. stack layout fill/padding ...
             };
             CreateEventHandlers(outstandingTimesheets);
             return outstandingTimesheets;
