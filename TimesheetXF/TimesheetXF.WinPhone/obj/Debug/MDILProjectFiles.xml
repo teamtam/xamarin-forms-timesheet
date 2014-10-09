@@ -31,6 +31,7 @@
     <File Type="PCL">Xamarin.Forms.Xaml.dll</File>
     <File>Xamarin.Forms.Core.xml</File>
     <File>Xamarin.Forms.Xaml.xml</File>
+    <File>TimesheetXF\FodyWeavers.xml</File>
     <File>WMAppManifest.xml</File>
     <File>AppxManifest.xml</File>
   </XAPFiles>

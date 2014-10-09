@@ -1,9 +1,9 @@
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF.Android\bin\Debug\TimesheetXF.Android.dll
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\TimesheetXF\TimesheetXF\bin\Debug\TimesheetXF.dll
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\packages\Xamarin.Android.Support.v4.19.0.2\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\packages\Xamarin.Forms.1.0.6186\lib\MonoAndroid10\Xamarin.Forms.Core.dll
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\packages\Xamarin.Forms.1.0.6186\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
-C:\BenSource\GitHub\xamarin-forms-timesheet-demo\packages\Xamarin.Forms.1.0.6186\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
+C:\BenSource\GitHub\xamarin-forms-timesheet\TimesheetXF\TimesheetXF.Android\bin\Debug\TimesheetXF.Android.dll
+C:\BenSource\GitHub\xamarin-forms-timesheet\TimesheetXF\TimesheetXF\bin\Debug\TimesheetXF.dll
+C:\BenSource\GitHub\xamarin-forms-timesheet\packages\Xamarin.Android.Support.v4.19.0.2\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll
+C:\BenSource\GitHub\xamarin-forms-timesheet\packages\Xamarin.Forms.1.0.6186\lib\MonoAndroid10\Xamarin.Forms.Core.dll
+C:\BenSource\GitHub\xamarin-forms-timesheet\packages\Xamarin.Forms.1.0.6186\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
+C:\BenSource\GitHub\xamarin-forms-timesheet\packages\Xamarin.Forms.1.0.6186\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.Concurrent.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.Annotations.dll

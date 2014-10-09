@@ -20,7 +20,7 @@ namespace TimesheetXF.WinPhone
             InitializeComponent();
 
             Forms.Init();
-            Content = TimesheetXF.App.GetMainPage().ConvertPageToUIElement(this);
+            Content = TimesheetXF.App.MainPage.ConvertPageToUIElement(this);
         }
     }
 }

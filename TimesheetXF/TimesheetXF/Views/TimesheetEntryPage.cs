@@ -1,17 +1,23 @@
 ﻿using System;
 using Xamarin.Forms;
-using TimesheetXF.Models;
+using TimesheetXF.ViewModels;
 using TimesheetXF.Services;
 
-namespace TimesheetXF.Pages
+namespace TimesheetXF.Views
 {
-    public class TimesheetEntryPage : ContentPage
+    public class TimesheetEntryPage : BaseContentPage
     {
         private const int LEFT_COLUMN_WIDTH = 100;
 
-        public TimesheetEntryPage(TimesheetEntry timesheet)
+        protected TimesheetEntryViewModel ViewModel
         {
-            this.BindingContext = timesheet;
+            get { return BindingContext as TimesheetEntryViewModel; }
+            set { BindingContext = value; }
+        }
+
+        public TimesheetEntryPage(TimesheetEntryViewModel timesheet)
+        {
+            BindingContext = timesheet;
 
             var dateLayout = new StackLayout
             {
@@ -70,10 +76,12 @@ namespace TimesheetXF.Pages
                     submitButton
                 }
             };
+            var layout = CreateLoadingIndicatorRelativeLayout(content);
+            //var layout = CreateLoadingIndicatorAbsoluteLayout(content);
 
             Padding = new Thickness(15, 10);
             Title = "Submit";
-            Content = content;
+            Content = layout;
         }
 
         private Label CreateDateLabel()
@@ -96,7 +104,7 @@ namespace TimesheetXF.Pages
                 VerticalOptions = LayoutOptions.Start,
                 Font = Font.SystemFontOfSize(NamedSize.Small)
             };
-            dateInput.SetBinding<TimesheetEntry>(Label.TextProperty, m => m.DisplayDate);
+            dateInput.SetBinding<TimesheetEntryViewModel>(Label.TextProperty, m => m.DisplayDate);
             return dateInput;
         }
 
@@ -120,7 +128,7 @@ namespace TimesheetXF.Pages
                 VerticalOptions = LayoutOptions.Start,
                 Font = Font.SystemFontOfSize(NamedSize.Small),
             };
-            customerInput.SetBinding<TimesheetEntry>(Label.TextProperty, m => m.Customer);
+            customerInput.SetBinding<TimesheetEntryViewModel>(Label.TextProperty, m => m.Customer);
             return customerInput;
         }
 
@@ -144,7 +152,7 @@ namespace TimesheetXF.Pages
                 VerticalOptions = LayoutOptions.Start,
                 Font = Font.SystemFontOfSize(NamedSize.Small)
             };
-            projectInput.SetBinding<TimesheetEntry>(Label.TextProperty, m => m.Project);
+            projectInput.SetBinding<TimesheetEntryViewModel>(Label.TextProperty, m => m.Project);
             return projectInput;
         }
 
@@ -167,8 +175,10 @@ namespace TimesheetXF.Pages
             {
                 hours.Items.Add(i.ToString());
             }
+            hours.SelectedIndex = 32; // NOTE: Xamarin.Forms does not currently support data binding for the Picker
             hours.HorizontalOptions = LayoutOptions.FillAndExpand; // NOTE: why doesn't EndAndExpand work?
             hours.VerticalOptions = LayoutOptions.Start;
+            hours.SelectedIndexChanged += (sender, e) => { ViewModel.Hours = Convert.ToDecimal(hours.Items[hours.SelectedIndex]); };
             return hours;
         }
 
@@ -186,11 +196,13 @@ namespace TimesheetXF.Pages
 
         private Entry CreateCommentInput()
         {
-            return new Entry
+            var commentInput = new Entry
             {
                 HorizontalOptions = LayoutOptions.FillAndExpand, // NOTE: why doesn't EndAndExpand work?
                 VerticalOptions = LayoutOptions.Start
             };
+            commentInput.SetBinding<TimesheetEntryViewModel>(Entry.TextProperty, m => m.Comment, BindingMode.TwoWay);
+            return commentInput;
         }
 
         private static Label CreateSickLeaveLabel()
@@ -207,14 +219,16 @@ namespace TimesheetXF.Pages
 
         private Switch CreateSickLeaveInput()
         {
-            return new Switch
+            var sickLeaveInput = new Switch
             {
                 HorizontalOptions = LayoutOptions.EndAndExpand, // NOTE: why doesn't End work?
                 VerticalOptions = LayoutOptions.Start
             };
+            sickLeaveInput.SetBinding<TimesheetEntryViewModel>(Switch.IsToggledProperty, m => m.SickLeave, BindingMode.TwoWay);
+            return sickLeaveInput;
         }
 
-        private Button CreateSubmitButton(TimesheetEntry timesheet, Picker hours, Entry comment, Switch sickLeave)
+        private Button CreateSubmitButton(TimesheetEntryViewModel timesheet, Picker hours, Entry comment, Switch sickLeave)
         {
             var submitButton = new Button
             {
@@ -223,14 +237,7 @@ namespace TimesheetXF.Pages
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center,
             };
-            submitButton.Clicked += (sender, e) =>
-            {
-                timesheet.Hours = Convert.ToDecimal(hours.Items[hours.SelectedIndex]);
-                timesheet.Comment = comment.Text;
-                timesheet.SickLeave = sickLeave.IsToggled;
-                TimesheetService.SubmitTimesheetEntry(timesheet);
-                Navigation.PopAsync();
-            };
+            submitButton.SetBinding<TimesheetEntryViewModel>(Button.CommandProperty, m => m.SaveTimesheetCommand);
             return submitButton;
         }
     }

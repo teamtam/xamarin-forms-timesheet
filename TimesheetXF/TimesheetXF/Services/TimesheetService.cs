@@ -7,9 +7,9 @@ namespace TimesheetXF.Services
 {
     public class TimesheetService
     {
-        public static IEnumerable<TimesheetEntry> GetTimesheetEntries()
+        public static async Task<IEnumerable<TimesheetEntry>> GetTimesheetEntries()
         {
-            Task.Delay(2000).Wait(); // NOTE: just to simulate a HTTP request over the wire
+            await Task.Delay(2000); // NOTE: just to simulate a HTTP request over the wire
             List<TimesheetEntry> dates = new List<TimesheetEntry>();
             DateTime current = DateTime.Today;
             for (int i = 0; i < 5; i++)
@@ -35,9 +35,11 @@ namespace TimesheetXF.Services
             };
         }
 
-        public static void SubmitTimesheetEntry(TimesheetEntry timesheet)
+        public static async Task SubmitTimesheetEntry(TimesheetEntry timesheet)
         {
-            Task.Delay(2000).Wait(); // NOTE: just to simulate a HTTP request over the wire
+            await Task.Delay(2000); // NOTE: just to simulate a HTTP request over the wire
+            if (DateTime.Now.Second < 10)
+                throw new Exception("Some exception");
             return;
         }
     }
