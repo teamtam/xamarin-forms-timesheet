@@ -17,13 +17,16 @@ namespace TimesheetXF.Views
         {
             BindingContext = new OutstandingTimesheetsViewModel();
 
-            var layout = CreateLoadingIndicatorRelativeLayout(CreateOutstandingTimesheets());
+            var layout = new StackLayout
+            {
+                Children = { CreateLoadingIndicator(), CreateOutstandingTimesheets() }
+            };
+            //var layout = CreateLoadingIndicatorRelativeLayout(CreateOutstandingTimesheets());
             //var layout = CreateLoadingIndicatorAbsoluteLayout(CreateOutstandingTimesheets());
 
             Padding = new Thickness(0, 10, 0, 0);
             Title = "Timesheets";
             Content = layout;
-            BackgroundColor = Color.Red;
         }
 
         private ListView CreateOutstandingTimesheets()
@@ -35,7 +38,6 @@ namespace TimesheetXF.Views
                 HorizontalOptions = LayoutOptions.StartAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 RowHeight = 75, // NOTE: would be nice if this was more dynamic e.g. stack layout fill/padding ...
-                BackgroundColor = Color.White
             };
             CreateEventHandlers(outstandingTimesheets);
             return outstandingTimesheets;

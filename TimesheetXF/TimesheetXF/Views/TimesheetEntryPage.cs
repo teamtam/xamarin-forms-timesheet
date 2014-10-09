@@ -63,7 +63,7 @@ namespace TimesheetXF.Views
 
             var submitButton = CreateSubmitButton(timesheet, hoursInput, commentInput, sickLeaveInput);
 
-            var content = new StackLayout
+            var layout = new StackLayout
             {
                 Children =
                 {
@@ -73,17 +73,16 @@ namespace TimesheetXF.Views
                     hoursLayout,
                     commentLayout,
                     sickLeaveLayout,
-                    submitButton
+                    submitButton,
+                    CreateLoadingIndicator()
                 }
             };
-            content.BackgroundColor = Color.White;
-            var layout = CreateLoadingIndicatorRelativeLayout(content);
+            //var layout = CreateLoadingIndicatorRelativeLayout(content);
             //var layout = CreateLoadingIndicatorAbsoluteLayout(content);
 
             Padding = new Thickness(15, 10);
             Title = "Submit";
             Content = layout;
-            BackgroundColor = Color.Red;
         }
 
         private Label CreateDateLabel()
