@@ -8,3 +8,9 @@ x64/
 build/
 [Bb]in/
 [Oo]bj/
+
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+*.DS_Store

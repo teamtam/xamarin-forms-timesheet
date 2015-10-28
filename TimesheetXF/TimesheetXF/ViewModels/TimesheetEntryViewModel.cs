@@ -82,11 +82,11 @@ namespace TimesheetXF.ViewModels
                 Timesheet.Comment = Comment;
                 Timesheet.SickLeave = SickLeave;
                 await TimesheetService.SubmitTimesheetEntry(Timesheet);
-                App.Navigation.PopAsync();
+                await App.Navigation.PopAsync();
             }
             catch (Exception ex)
             {
-                App.MainPage.DisplayAlert("Error", ex.Message, "OK", null);
+                await App.MainPage.DisplayAlert("Error", ex.Message, "OK", null);
             }
             finally
             {
