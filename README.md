@@ -1,8 +1,9 @@
-xamarin-forms-timesheet
-=======================
+# xamarin-forms-timesheet
 
-Simple timesheet app to explore Xamarin.Forms to go with blog at:
+This is a simple timesheet app to explore Xamarin.Forms. There is also a subsequent Xamarin iOS/Android implementation of the same app to allow for a comparison.
 
-http://teamtam.net/xamarin-forms-test-drive/
+**Xamarin iOS/Android Implementation**
+* https://github.com/teamtam/xamarin-timesheet/
 
-Enjoy!
+**Blog**
+* http://teamtam.net/xamarin-forms-test-drive/
