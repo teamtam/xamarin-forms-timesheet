@@ -1,16 +1,15 @@
-﻿using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using TimesheetXF.Views;
 
 namespace TimesheetXF
 {
-    public class App
+    public class App : Application
     {
-        public static readonly Page MainPage = new NavigationPage(new OutstandingTimesheetListPage());
-
-        public static INavigation Navigation
+        public App()
         {
-            get { return MainPage.Navigation; }
+			//InitializeComponent();
+
+			MainPage = new NavigationPage(new OutstandingTimesheetListPage());
         }
     }
 }

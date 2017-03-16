@@ -1,10 +1,5 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 
 using Xamarin.Forms.Platform.Android;
@@ -12,7 +7,7 @@ using Xamarin.Forms.Platform.Android;
 namespace TimesheetXF.Droid
 {
     [Activity(Label = "TimesheetXF", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : AndroidActivity
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -20,8 +15,7 @@ namespace TimesheetXF.Droid
 
             Xamarin.Forms.Forms.Init(this, bundle);
 
-            SetPage(App.MainPage);
+            LoadApplication(new App());
         }
     }
 }
-

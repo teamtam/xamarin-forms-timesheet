@@ -13,6 +13,7 @@ namespace TimesheetXF.ViewModels
     public class TimesheetEntryViewModel : BaseViewModel
     {
         private TimesheetEntry Timesheet { get; set; }
+        private INavigation Navigation { get; set; }
 
         [AlsoNotifyFor("DisplayDate")]
         public DateTime Date { get; set; }
@@ -24,9 +25,10 @@ namespace TimesheetXF.ViewModels
 
         public ObservableCollection<decimal> HoursCollection { get; set; }
 
-        protected TimesheetEntryViewModel()
+        protected TimesheetEntryViewModel(INavigation navigation)
         {
             Timesheet = new TimesheetEntry();
+            Navigation = navigation;
         }
 
         public TimesheetEntryViewModel(TimesheetEntry timesheet)
@@ -49,15 +51,11 @@ namespace TimesheetXF.ViewModels
         {
             get
             {
-                if (Date != null)
-                {
-                    if (Date.Equals(DateTime.Today))
-                        return "Today";
-                    if (Date.Equals(DateTime.Today.AddDays(-1)))
-                        return "Yesterday";
-                    return Date.DayOfWeek + " " + Date.ToString("dd/MM/yyyy");
-                }
-                return string.Empty;
+                if (Date.Equals(DateTime.Today))
+                    return "Today";
+                if (Date.Equals(DateTime.Today.AddDays(-1)))
+                    return "Yesterday";
+                return Date.DayOfWeek + " " + Date.ToString("dd/MM/yyyy");
             }
         }
 
@@ -82,11 +80,12 @@ namespace TimesheetXF.ViewModels
                 Timesheet.Comment = Comment;
                 Timesheet.SickLeave = SickLeave;
                 await TimesheetService.SubmitTimesheetEntry(Timesheet);
-                await App.Navigation.PopAsync();
+                await Navigation.PopAsync();
             }
             catch (Exception ex)
             {
-                await App.MainPage.DisplayAlert("Error", ex.Message, "OK", null);
+                // TODO: dialog service
+				// await Navigation.DisplayAlert("Error", ex.Message, "OK", null);
             }
             finally
             {

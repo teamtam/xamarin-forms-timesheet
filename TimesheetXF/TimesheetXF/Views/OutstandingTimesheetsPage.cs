@@ -49,7 +49,7 @@ namespace TimesheetXF.Views
                     VerticalOptions = LayoutOptions.Start
                 };
                 dateLabel.SetBinding<TimesheetEntryViewModel>(Label.TextProperty, m => m.DisplayDate);
-                dateLabel.Font = Font.BoldSystemFontOfSize(NamedSize.Medium);
+                dateLabel.FontAttributes = FontAttributes.Bold;
 
                 var customerLabel = new Label
                 {

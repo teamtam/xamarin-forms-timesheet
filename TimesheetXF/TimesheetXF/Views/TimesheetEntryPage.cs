@@ -92,7 +92,7 @@ namespace TimesheetXF.Views
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
                 WidthRequest = LEFT_COLUMN_WIDTH,
-                Font = Font.BoldSystemFontOfSize(NamedSize.Medium)
+				FontAttributes = FontAttributes.Bold
             };
         }
 
@@ -102,7 +102,7 @@ namespace TimesheetXF.Views
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                Font = Font.SystemFontOfSize(NamedSize.Small)
+				FontAttributes = FontAttributes.Bold
             };
             dateInput.SetBinding<TimesheetEntryViewModel>(Label.TextProperty, m => m.DisplayDate);
             return dateInput;
@@ -116,7 +116,7 @@ namespace TimesheetXF.Views
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
                 WidthRequest = LEFT_COLUMN_WIDTH,
-                Font = Font.BoldSystemFontOfSize(NamedSize.Medium)
+				FontAttributes = FontAttributes.Bold
             };
         }
 
@@ -126,7 +126,6 @@ namespace TimesheetXF.Views
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                Font = Font.SystemFontOfSize(NamedSize.Small),
             };
             customerInput.SetBinding<TimesheetEntryViewModel>(Label.TextProperty, m => m.Customer);
             return customerInput;
@@ -140,7 +139,7 @@ namespace TimesheetXF.Views
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
                 WidthRequest = LEFT_COLUMN_WIDTH,
-                Font = Font.BoldSystemFontOfSize(NamedSize.Medium)
+                FontAttributes = FontAttributes.Bold
             };
         }
 
@@ -150,7 +149,6 @@ namespace TimesheetXF.Views
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                Font = Font.SystemFontOfSize(NamedSize.Small)
             };
             projectInput.SetBinding<TimesheetEntryViewModel>(Label.TextProperty, m => m.Project);
             return projectInput;
@@ -164,7 +162,7 @@ namespace TimesheetXF.Views
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
                 WidthRequest = LEFT_COLUMN_WIDTH,
-                Font = Font.BoldSystemFontOfSize(NamedSize.Medium)
+				FontAttributes = FontAttributes.Bold
             };
         }
 
@@ -190,7 +188,7 @@ namespace TimesheetXF.Views
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
                 WidthRequest = LEFT_COLUMN_WIDTH,
-                Font = Font.BoldSystemFontOfSize(NamedSize.Medium)
+                FontAttributes = FontAttributes.Bold
             };
         }
 
@@ -213,7 +211,7 @@ namespace TimesheetXF.Views
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
                 WidthRequest = LEFT_COLUMN_WIDTH,
-                Font = Font.BoldSystemFontOfSize(NamedSize.Medium)
+                FontAttributes = FontAttributes.Bold
             };
         }
 
@@ -233,9 +231,9 @@ namespace TimesheetXF.Views
             var submitButton = new Button
             {
                 Text = "Submit",
-                Font = Font.BoldSystemFontOfSize(NamedSize.Medium),
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center,
+				FontAttributes = FontAttributes.Bold
             };
             submitButton.SetBinding<TimesheetEntryViewModel>(Button.CommandProperty, m => m.SaveTimesheetCommand);
             return submitButton;
